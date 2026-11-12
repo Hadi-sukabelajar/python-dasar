@@ -111,5 +111,8 @@ print(type(tinggi))    # <class 'int'>
 x = 10 
 print(x)
 
- del x 
+del x 
 # print(x)  error karena variable sudah di hapus
+
+
+#KONSTANTA DI PYTHON
