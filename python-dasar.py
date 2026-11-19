@@ -372,4 +372,44 @@ print(ganjil & genap)   # Intersection
 print(ganjil - genap)   # Difference
 
 
+#DICTIONARY
+
+# Membuat dictionary sederhana
+mahasiswa = {
+    "nama": "Budi",
+    "umur": 20,
+    "jurusan": "Informatika"
+}
+
+print(mahasiswa)
+
+#MENGAKSES DATA
+print(mahasiswa["nama"])    # Budi
+print(mahasiswa.get("umur")) # 20
+
+#MENAMBAH DAN MENGUBAH DATA
+mahasiswa["angkatan"] = 2023   # Menambah data baru
+mahasiswa["umur"] = 21         # Mengubah value umur
+
+print(mahasiswa)
+
+#MENHAPUS DATA
+
+mahasiswa.pop("jurusan")   # Menghapus dengan key
+del mahasiswa["nama"]      # Menghapus dengan del
+
+print(mahasiswa)
+
+#ITERASI DICITIONARY
+for key, value in mahasiswa.items():
+    print(key, ":", value)
+
+#NESTED DICTIONARY
+kampus = {
+    "mahasiswa1": {"nama": "Budi", "umur": 21},
+    "mahasiswa2": {"nama": "Siti", "umur": 22}
+}
+
+print(kampus["mahasiswa1"]["nama"])  # Budi
+
 #
