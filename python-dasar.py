@@ -498,4 +498,37 @@ print("Setelah setor:", akun.lihat_saldo())
 akun.tarik(300)
 print("Setelah tarik:", akun.lihat_saldo())
 
+#INHERITANCE
+
+#CONTOH INHERITANCE
+class Hewan:
+    def __init__(self, nama):
+        self.nama = nama
+
+    def bersuara(self):
+        pass
+
+class Kucing(Hewan):
+    def __init__(self, nama):
+        super().__init__(nama)
+
+    def bersuara(self):
+        return f"{self.nama} mengeluarkan suara: Meong!"
+
+class Anjing(Hewan):
+    def __init__(self, nama):
+        super().__init__(nama)
+
+    def bersuara(self):
+        return f"{self.nama} mengeluarkan suara: Guk gak!"
+
+# Membuat objek dari class yang diwariskan
+kucing = Kucing("Whiskers")
+anjing = Anjing("Buddy")
+
+# Memanggil method yang diwariskan
+print(kucing.bersuara())
+print(anjing.bersuara())
+
+
 #
